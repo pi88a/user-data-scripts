@@ -21,4 +21,10 @@ source ~/.bash_profile
 
 # Install Ansible
 python3 -m pip install --user ansible
+
+# Install required Python modules for dynamic inventory
 pip install boto3
+
+# Install Ansible module to connect to Windows
+pip install "pypsrp<=1.0.0"
+pip install "pywinrm>=0.4.0"
